@@ -5,6 +5,7 @@
 ## 바로 읽기
 
 - [챕터별 180편 논문 카탈로그](./paper-catalog/README.md) — 제목, 전체 저자, 연도, 베뉴 또는 공개 상태, arXiv 초록·PDF 링크
+- [심화 리딩 가이드 웹에서 바로 읽기](https://gisbi-kim.github.io/physical-ai-trends-2026/reading-materials/guidebook/)
 - [심화 리딩 가이드 PDF](./guidebook/physical-ai-deep-reading-guide.pdf)
 - [심화 리딩 가이드 Markdown](./guidebook/physical-ai-deep-reading-guide.md)
 - [심화 리딩 가이드 LaTeX](./guidebook/physical-ai-deep-reading-guide.tex)

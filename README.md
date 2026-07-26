@@ -18,6 +18,7 @@
 ### 심화 리딩 자료
 
 - [180편 논문 목록과 원문 링크](./reading-materials/paper-catalog/README.md)
+- [심화 리딩 가이드 웹에서 바로 읽기](https://gisbi-kim.github.io/physical-ai-trends-2026/reading-materials/guidebook/)
 - [심화 리딩 가이드 PDF](./reading-materials/guidebook/physical-ai-deep-reading-guide.pdf)
 - [심화 리딩 가이드 Markdown](./reading-materials/guidebook/physical-ai-deep-reading-guide.md)
 - [심화 리딩 가이드 LaTeX](./reading-materials/guidebook/physical-ai-deep-reading-guide.tex)
@@ -63,7 +64,7 @@
 1. 원책에서 관심 장의 문제 설정과 결론을 읽는다.
 2. [논문 목록](./reading-materials/paper-catalog/README.md)에서 제목·저자·연도·베뉴 또는 공개 상태를 확인한다.
 3. 각 논문의 초록 링크와 PDF 링크를 통해 원문으로 이동한다.
-4. [심화 리딩 가이드](./reading-materials/guidebook/physical-ai-deep-reading-guide.pdf)에서 질문과 적용 경계를 먼저 확인한 뒤 논문을 읽는다.
+4. [심화 리딩 가이드 웹 뷰어](https://gisbi-kim.github.io/physical-ai-trends-2026/reading-materials/guidebook/)에서 질문과 적용 경계를 먼저 확인한 뒤 논문을 읽는다.
 5. 서로 다른 역할의 논문을 비교해 한 편의 성능 수치가 아니라 시스템 전체의 증거를 판단한다.
 
 연구자는 2–6장의 모델·인지·계획·기체·데이터 축을, 제품 책임자는 7–8장의 조직·검증·복구 축을, 경영·기술 전략 담당자는 1장과 9장의 전환 신호를 먼저 읽을 수 있다.
@@ -114,9 +115,10 @@ latexmk -xelatex -interaction=nonstopmode reading-materials/guidebook/physical-a
    ├─ paper-catalog/
    │  └─ README.md
    └─ guidebook/
+      ├─ index.html
       ├─ physical-ai-deep-reading-guide.md
       ├─ physical-ai-deep-reading-guide.tex
       └─ physical-ai-deep-reading-guide.pdf
 ```
 
-GitHub Pages의 루트 주소는 브라우저 PDF 뷰어로 원책을 연다. 심화 리딩 자료는 저장소의 `reading-materials/`에서 별도로 탐색할 수 있다.
+GitHub Pages의 루트 주소는 원책을, [`/reading-materials/guidebook/`](https://gisbi-kim.github.io/physical-ai-trends-2026/reading-materials/guidebook/)은 심화 리딩 가이드를 브라우저 PDF 뷰어로 연다.

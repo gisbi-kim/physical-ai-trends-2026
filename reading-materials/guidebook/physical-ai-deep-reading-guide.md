@@ -2,6 +2,8 @@
 
 원책의 9개 장을 180편의 공개 논문으로 내려 읽는 해설서다.
 
+[웹에서 바로 읽기](https://gisbi-kim.github.io/physical-ai-trends-2026/reading-materials/guidebook/) · [PDF 열기](./physical-ai-deep-reading-guide.pdf)
+
 [챕터별 180편 논문 카탈로그](../paper-catalog/README.md)에서 전체 저자, arXiv 최초 공개 연도, 베뉴 또는 공개 상태와 원문 링크를 확인할 수 있다. 제3자 논문 PDF는 저장소에 포함하지 않는다.
 
 ## 1. 왜 지금 Physical AI인가
