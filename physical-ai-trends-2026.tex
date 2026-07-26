@@ -106,9 +106,16 @@
 \newcommand{\keyterm}[1]{{\sffamily\bfseries\color{deepblue}#1}}
 \newcommand{\eng}[1]{{\sffamily\color{midblue}#1}}
 \newcommand{\watch}[2]{%
-  \noindent\begin{tabularx}{\textwidth}{>{\sffamily\bfseries\color{teal}}p{0.28\textwidth}X}
-  #1 & #2
-  \end{tabularx}\par
+  \noindent
+  \parbox[t]{0.31\linewidth}{%
+    \vspace{0pt}\raggedright\sffamily\bfseries\color{teal}%
+    \hyphenpenalty=10000\exhyphenpenalty=10000\strut #1\strut\par
+  }%
+  \hfill
+  \parbox[t]{0.65\linewidth}{%
+    \vspace{0pt}\raggedright\strut #2\strut\par
+  }%
+  \par\smallskip
 }
 \newcommand{\chaptertakeaway}[1]{%
   \begin{tcolorbox}[
@@ -1030,15 +1037,13 @@ Physical AI의 평가는 task success를 버리는 것이 아니라, 운영 지�
 로봇 가격보다 데이터 수집, 원격 개입, 검토, 현장 통합, 유지보수, 보험과 책임 비용이 더 클 수 있습니다. Physical AI의 사업성은 한 대의 intelligence score가 아니라 fleet 전체의 \keyterm{total cost of ownership}으로 판단해야 합니다.
 
 \begin{fieldbox}[2026년 하반기 관찰 대시보드]
-\begin{tabularx}{\textwidth}{>{\sffamily\bfseries\color{teal}}p{0.28\textwidth}X}
-정책 & 새 과업 조합, 기체 전이, action latency, 비동기 실행 \\
-세계 상태 & 3D·occupancy·촉각의 planner 기여와 불확실성 calibration \\
-장기성 & memory retrieval, checkpoint, partial completion, recovery \\
-월드모델 & counterfactual planning과 실제 폐루프 위험 감소 \\
-데이터 & 인간·로봇·합성 데이터의 정렬과 재검증 \\
-신뢰성 & intervention, abstention, near-miss, runtime verification \\
-운영 & edge 실행, uptime, change failure, canary, rollback, 현장 총비용 \\
-\end{tabularx}
+\watch{정책}{새 과업 조합, 기체 전이, action latency, 비동기 실행}
+\watch{세계 상태}{3D·occupancy·촉각의 planner 기여와 불확실성 calibration}
+\watch{장기성}{memory retrieval, checkpoint, partial completion, recovery}
+\watch{월드모델}{counterfactual planning과 실제 폐루프 위험 감소}
+\watch{데이터}{인간·로봇·합성 데이터의 정렬과 재검증}
+\watch{신뢰성}{intervention, abstention, near-miss, runtime verification}
+\watch{운영}{edge 실행, uptime, change failure, canary, rollback, 현장 총비용}
 \end{fieldbox}
 
 \chapter*{에필로그: 로봇에게 지능보다 책임을 묻는 시대}
@@ -1197,9 +1202,9 @@ World model 안에서 세 후보를 짧게 실행해보고 충돌, 컵의 전도
 
 \begin{fieldbox}[하반기에 볼 숫자]
 \watch{Planning regret}{월드모델이 고른 행동과 실제 최선 행동의 비용 차이}
-\watch{Rollout horizon error}{예측 길이가 늘어날 때 상태·위험 오차가 누적되는 속도}
+\watch{Rollout horizon\\error}{예측 길이가 늘어날 때 상태·위험 오차가 누적되는 속도}
 \watch{OOD calibration}{학습 분포 밖 행동에서 불확실성이 실제 오류와 맞는 정도}
-\watch{Policy ranking fidelity}{가상 평가 순위와 실로봇 평가 순위의 일치}
+\watch{Policy ranking\\fidelity}{가상 평가 순위와 실로봇 평가 순위의 일치}
 \end{fieldbox}
 
 \begin{translationbox}
