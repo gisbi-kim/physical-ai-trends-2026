@@ -1,0 +1,15 @@
+# Local curation inputs and verification copies
+research/
+tools/
+reading-materials/manifest.json
+reading-materials/papers/
+
+# LaTeX build intermediates
+*.aux
+*.fdb_latexmk
+*.fls
+*.log
+*.out
+*.toc
+*.xdv
+*.synctex.gz
